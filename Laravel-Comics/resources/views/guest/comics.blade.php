@@ -1,5 +1,14 @@
 @extends('layout.base')
 
 @section('content')
-    <h1>Comics section</h1>
+<div class="contents">
+    <div class="comics-content">
+        @foreach ($comics as $element)
+            <div class="comics-card">
+                <img src="{{$element['thumb']}}" alt="{{$element['title']}}">
+                <h3> {{$element['title']}} </h3>
+            </div>
+        @endforeach
+    </div>
+</div>
 @endsection
