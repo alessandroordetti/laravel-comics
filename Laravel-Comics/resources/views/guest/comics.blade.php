@@ -1,6 +1,10 @@
 @extends('layout.base')
 
 @section('content')
+<div class="jumbotron">
+
+</div>
+
 <div class="contents">
     <div class="comics-content">
         @foreach ($comics as $element)
