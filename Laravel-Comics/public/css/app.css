@@ -1,0 +1,99 @@
+*{
+  font-family: sans-serif;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-wrapper {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 0.6rem;
+}
+
+nav ul a {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+h3 {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  list-style-type: none;
+
+  & li {
+      margin-bottom: .4rem;
+  }
+}
+
+.background {
+  background-color: #303030e1;
+  background-image: url('../images/footer-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contacts-wrapper {
+  height: 480px;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 1rem;
+}
+
+.dc-bigger-logo img{
+  width: 90%;
+}
+
+.footer-wrapper {
+  width: 70%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+div a, div span {
+  padding: .5rem;
+  color: #0412d3;
+  font-weight: bold;
+}
+
+.background li {
+  margin-bottom: .7rem;
+}
+
+.social-media-contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-media-contacts button {
+  padding: 1rem;
+  border: 3px solid #1067b8;
+  background-color: #303030e1;
+  color: white;
+  text-transform: uppercase;
+}
