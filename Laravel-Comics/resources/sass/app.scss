@@ -1,3 +1,5 @@
+@import "~bootstrap/scss/bootstrap";
+
 body {
     font-family: sans-serif;
 }
@@ -8,6 +10,7 @@ body {
     margin-bottom: 25px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     & .img-wrapper img {
         width: 75%;
@@ -155,7 +158,26 @@ ul {
 
 div a, div span {
     padding: .5rem;
-
     color: #0412d3;
     font-weight: bold;
+}
+
+.active {
+    background-color: #51a7fb;
+}
+
+input {
+    text-align: end;
+    border: none;
+    border-bottom: 1px solid blue;
+    font-size: 1rem;
+}
+
+.green-wrapper {
+    height: 50px;
+    background-color: #55ba59;
+}
+
+#availability {
+    border-left: 2px solid black;
 }

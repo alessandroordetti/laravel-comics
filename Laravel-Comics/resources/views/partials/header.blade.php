@@ -10,7 +10,7 @@
                     Characters
                 </a>
             </li>
-            <li>
+            <li class="{{Route::currentRouteName() == 'comics-page' ? 'active' : ''}}">
                 <a href="{{ route('comics-page')}}">
                     Comics
                 </a>
@@ -57,4 +57,12 @@
             </li>
         </ul>
     </nav>
+
+    <div class="searchbar">
+        <input type="text" placeholder="search">
+    </div>
+</div>
+
+<div class="jumbotron">
+
 </div>
