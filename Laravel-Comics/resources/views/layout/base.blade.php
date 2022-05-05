@@ -16,5 +16,6 @@
     </main>
 
     @include('partials.footer')
+    
 </body>
 </html>
