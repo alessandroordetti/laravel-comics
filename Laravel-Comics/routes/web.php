@@ -18,11 +18,6 @@ Route::get('/home', function () {
     return view('guest.home', ["comics" => $comics]);
 })->name('home-page');
 
-Route::get('/comics', function () {
-    $comics = config('comics');
-    return view('guest.comics', ["comics" => $comics]);
-})->name('comics-page');
-
 Route::get('/comics/{id}', function ($id) {
     $comics = config('comics');
     if (is_numeric($id) && $id>=0 && $id < count($comics)){
@@ -30,4 +25,4 @@ Route::get('/comics/{id}', function ($id) {
     } else {
         abort(404);
     }
-})->name('comic-page');
+})->name('guest-comic');

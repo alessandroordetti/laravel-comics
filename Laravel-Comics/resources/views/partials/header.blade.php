@@ -5,13 +5,13 @@
 
     <nav>
         <ul>
-            <li>
-                <a href="">
+            <li class="{{Route::currentRouteName() == 'guest.home' ? 'active' : ''}}">
+                <a href="{{route('home-page')}}">
                     Characters
                 </a>
             </li>
-            <li class="{{Route::currentRouteName() == 'comics-page' ? 'active' : ''}}">
-                <a href="{{ route('comics-page')}}">
+            <li>
+                <a>
                     Comics
                 </a>
             </li>
